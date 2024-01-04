@@ -12,8 +12,6 @@ const jump = () => {
 
 const loop = setInterval(() => {
 
-
-
     const pipePosition = pipe.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
 
@@ -24,7 +22,7 @@ const loop = setInterval(() => {
         mario.style.animation = 'none'; 
         mario.style.bottom = `${marioPosition}px`;
 
-        mario.src = './imagens/game-over.png';
+        mario.style.game;
         mario.style.width = '75px';
         mario.style.marginLeft = '50px';
 
@@ -32,5 +30,6 @@ const loop = setInterval(() => {
     }
 
 }, 10);
-  
-document.addEventListener('keydown', jump);       
+
+document.addEventListener('keydown', jump);
+document.addEventListener('TouchEvent', jump);
